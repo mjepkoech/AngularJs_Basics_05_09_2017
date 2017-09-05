@@ -1,0 +1,42 @@
+<html ng-app="millyApp">
+<head>
+    <script src="bower_components/angular/angular.js/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app/script.js"></script>
+    <script src="app/controllers/mainController.js"></script>
+    <style>
+        #container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+<nav class="">
+    <div id="container">
+        <div>
+            <a class="" href="/">Angular Demo</a>
+        </div>
+
+        <ul class="">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="main">
+    <div ng-view></div>
+</div>
+
+<footer class="text-center">
+    <p>View more on <a href="#">mjepkoech.com</a></p>
+</footer>
+
+</body>
+
+</html>
